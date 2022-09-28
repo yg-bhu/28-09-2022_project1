@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, button{
+            background-color: lime;
+        }
+        select, textarea, input{
+            background-color:lightpink;
+        }
+        h1{
+            color:chocolate;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        
+        .form{
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Employee form</h1>
+    <form align="center" class="form">
+        <label for="name" >Enter your name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="department" >Enter your department:</label>
+        <input type="text" id="department" name="department"><br><br>
+
+        <label for="bio" >Tell us a little about yourself:</label>
+        <textarea name="bio" id="bio" rows="4" cols="25"></textarea><br><br>
+
+        <label for="exercise">Do you exercise at home?</label>
+        <input type="radio" id="exercise1" name="exercise" value="Yes">Yes
+        <input type="radio" id="exercise2" name="exercise" value="No">No<br><br>
+
+        <label for="read1">How do you like to read about your favorite topics?</label><br><br>
+        <input type="checkbox" id="read1" name="read1" value="Books">Books
+        <input type="checkbox" id="read2" name="read2" value="Online resources">Online resources
+        <input type="checkbox" id="read3" name="read3" value="Phone apps">Phone apps
+        <input type="checkbox" id="read4" name="read4" value="Magazines">Magazines<br><br>
+
+        <label for="movies">What genre of movies do you like?</label>
+        <select id="movies" name="movies">
+            <option value="comedy">comedy</option>
+            <option value="horror">horror</option>
+            <option value="Drama">Drama</option>
+        </select><br><br>
+
+        <button type="submit">Submit form</button>
+    </form>
+</body>
+</html>
